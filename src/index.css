@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-next {
+  right: 9px;
+}
+.slick-prev {
+  /* background: red; */
+  left: 9px;
+  z-index: 1;
+}
+.slick-prev, .slick-next {
+  transition: 2s ease-in;
+  width: 32px;
+  height: 33px;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 25px;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  background: black;
+}
+.slick-slide > div {
+  margin: 0 0.5rem;
+}
