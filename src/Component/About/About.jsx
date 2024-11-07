@@ -11,7 +11,7 @@ const About = () => {
     <div className='py-32'>
       <div className='w-[1280px] max-w-[100%] my-0 mx-auto' >
         <div className='mb-20 mx-auto text-center'>
-          <h2 className='text-center text-black font-sans mb-[24px] text-[64.9px] font-thin animate-fadeInUpSlight'>Italian Cuisine At Its Finest</h2>
+          <h2 className='text-center text-black font-sans mb-[24px] sm:text-[64.9px] text-[40px] font-thin animate-fadeInUpSlight'>Italian Cuisine At Its Finest</h2>
           <h5 className='text-[18px] leading-[1.1] tracking-[2px] font-medium uppercase mb-6 font-serif text-Brown'> Buon Appetito</h5>
           <div className='text-[14px] font-normal leading-[1.6] tracking-[0.1px] text-light-black relative max-w-[420px] my-0 mx-auto '>
             <p className='text-center text-[100%]'>Experience the essence of Italy at Osteria Barocca - where tradition meets culinary innovation.</p>

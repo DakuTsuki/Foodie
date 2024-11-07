@@ -16,14 +16,22 @@ const footer = () => {
                 We are open all days of the week, have a look at the times below
                 and see what works best for you.
               </p>
-              <div className="w-[25%] inline-block align-top">
+              <div className="w-[32%] inline-block align-top">
                 <h3 className="mb-4">Weekday Hours</h3>
                 <dl>
                   <dt className="text-[12px]">Mon to Thu</dt>
                   <dd>10:00 AM to 10:00 PM</dd>
                 </dl>
               </div>
-              <div className="w-[25%] inline-block align-top">
+              <div className="w-[0%] mx-[20px] h-[102px] border-solid border-white border-[1px] inline-block align-top">
+{/* 
+              margin-left: 10px;
+    width: 0%;
+    margin-right: 20px;
+    height: 102px;
+    border: 1px solid white; */}
+              </div>
+              <div className="w-[32%] inline-block align-top">
                 <h3 className="mb-4">Weekday Hours</h3>
                 <dl>
                   <dt className="text-[12px]">Fri &amp; Sat</dt>

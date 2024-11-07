@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="m-0 p-0 mb-0 xs:hidden">
         <div className='flex flex-col items-center justify-between basis-1 border-b-4 border-white-100 text-white'>
           <div></div>
-          <div className="flex ml-5 items-center ">
+          <div className="flex ml-[-10px] items-center ">
             {socials.map((icon, index) => (
               <span key={index} className='ml-4 text-white font-sans'>{icon}</span>
             ))}
