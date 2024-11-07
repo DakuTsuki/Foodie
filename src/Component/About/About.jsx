@@ -2,7 +2,9 @@ import React from 'react'
 import SearedOcto from '../../assets/Seared-Octopus-rotated.jpg'
 import TableDrink from '../../assets/Table-Drink.jpg' 
 import FoodImg from '../../assets/foodimg.jpg'
+
 const About = () => {
+
   return (
 
     <>

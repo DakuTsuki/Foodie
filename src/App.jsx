@@ -3,6 +3,7 @@ import{ Hero } from './Component'
 import { About } from './Component'
 import { Experience } from './Component'
 import { Recipes } from './Component'
+import { Footer } from './Component'
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
     <About />
     <Experience />
     <Recipes/>
-
+    <Footer />
     </>
   )
 }

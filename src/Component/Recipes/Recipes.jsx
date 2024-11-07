@@ -3,68 +3,153 @@ import img1 from '../../assets/Food1.jpg'
 import img2 from '../../assets/easy-shrimp-cocktail.webp'
 import img3 from '../../assets/Funghi.jpg'
 import img4 from '../../assets/Spicy-Vodka-Rigatoni.jpg'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import 'slick-carousel/slick/slick-theme.css';
+
+import { IoBedOutline } from "react-icons/io5";
+import { IoManOutline } from "react-icons/io5";
+import { FaRegSquare } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
+import { IoIosCamera } from "react-icons/io";
+import { IoFilm } from "react-icons/io5";
+import './style.css'
 
 const Recipes = () => {
-  var settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-  return (
+ return(
     <div>
-      <div className="w-3/4 m-auto">
-      <div className="my-20">
-      <Slider {...settings}>
-        {data.map((d) =>(
-          <div className="bg-orange sm:h-[23rem] text-black rounded-xl h-[320px]">
-            <div className="rounded-t-xl bg-orange flex justify-center items-center">
-              <img src={d.img} alt="" className="lg:h-[12rem] lg:w-[26rem] h-[10rem]"/>
-            </div>
+     <section class="property" id="property">
+     <div class="container">
 
-            <div className="flex flex-col justify-center items-center">
-              <p className="text-xl font-semibold">{d.name}</p>
-              <p>{d.review}</p>
-              <button className="bg-orange-500 text-white text-lg px-6 py-1 rounded-xl">Read More</button>
-            </div>
-          </div>
-        ))}
+{/* <p class="section-subtitle">Properties</p> */}
 
-        </Slider>
-        </div>
-        
-        </div>
+<h2 class="h2 section-title">Recipes</h2>
+    
+  
+
+   <ul class="property-list has-scrollbar">
+   {data.map((d) =>(
+     <li>
+       <div class="property-card">
+
+         <figure class="card-banner">
+
+           <a href="#">
+             <img src={d.img} alt="New Apartment Nice View" class="w-100"/> 
+           </a>
+
+           {/* <div class="card-badge green">For Rent</div> */}
+{/* 
+           <div class="banner-actions">
+
+             <button class="banner-actions-btn">
+             <IoLocationOutline />
+
+               <address>Belmont Gardens, Chicago</address>
+             </button>
+
+             <button class="banner-actions-btn">
+             <IoIosCamera />
+
+               <span>4</span>
+             </button>
+
+             <button class="banner-actions-btn">
+             <IoFilm />
+
+               <span>2</span>
+             </button>
+
+           </div> */}
+
+         </figure>
+
+         <div class="card-content">
+
+           {/* <div class="card-price">
+             <strong>$34,900</strong>/Month
+           </div> */}
+
+           <h3 class="h3 card-title">
+             <a href="#">{d.name}</a>
+           </h3>
+
+           <p class="card-text">
+            {d.review}
+           </p>
+
+           {/* <ul class="card-list">
+
+             <li class="card-item">
+               <strong>3</strong>
+
+              <IoBedOutline />
+
+               <span>Bedrooms</span>
+             </li>
+
+             <li class="card-item">
+               <strong>2</strong>
+
+            <IoManOutline />
+
+               <span>Bathrooms</span>
+             </li>
+
+             <li class="card-item">
+               <strong>3450</strong>
+
+               <FaRegSquare />
+
+               <span>Square Ft</span>
+             </li>
+
+           </ul> */}
+
+         </div>
+
+         {/* <div class="card-footer">
+
+           <div class="card-author">
+
+             <figure class="author-avatar">
+               <img src={author} alt="William Seklo" class="w-100" />
+             </figure>
+
+             <div>
+               <p class="author-name">
+                 <a href="#">William Seklo</a>
+               </p>
+
+               <p class="author-title">Estate Agents</p>
+             </div>
+
+           </div>
+
+           <div class="card-footer-actions">
+
+             <button class="card-footer-actions-btn">
+               <ion-icon name="resize-outline"></ion-icon>
+             </button>
+
+             <button class="card-footer-actions-btn">
+               <ion-icon name="heart-outline"></ion-icon>
+             </button>
+
+             <button class="card-footer-actions-btn">
+               <ion-icon name="add-circle-outline"></ion-icon>
+             </button>
+
+           </div>
+
+         </div> */}
+
+       </div>
+     </li>
+))}
+
+               </ul>
+
+</div>
+   
+      </section>
     </div>
   );
 };
